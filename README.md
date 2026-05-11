@@ -1,8 +1,23 @@
 # 🚗 TURBO RACER: FUEL RECOVERY  
-### Hackathon + HR Friendly Project Documentation
+> *A Python-powered arcade racing experience with dynamic fuel survival mechanics.*
 
-A high-performance 2D car racing game built using **Python Turtle Graphics** following a clean **MVC (Model–View–Controller)** architecture.  
-Designed to demonstrate **game loop design, state management, collision detection, and dynamic difficulty scaling**.
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="420"/>
+</p>
+
+<p align="center">
+  <strong>Survive → Collect Fuel → Avoid Enemies → Increase Score</strong><br/>
+  A real-time 2D racing game built with Python Turtle Graphics (MVC Architecture).
+</p>
+
+<p align="center">
+  <a href="https://github.com/Zishan-125/Car_Game-Compiler_Design-">
+    <img src="https://img.shields.io/badge/🚀 Source%20Code-View%20on%20GitHub-black?style=for-the-badge">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/🎮 Game-TURBO%20RACER-red?style=for-the-badge">
+  </a>
+</p>
 
 ---
 
@@ -115,40 +130,30 @@ Python 3.x
 ```
 No external libraries required (only built-in Python modules).
 
-🧠 Key Technical Features
-🎯 Collision Detection
-$$
-d = √((x2 - x1)² + (y2 - y1)²)
-$$
-⚡ Game Movement Logic
-$$
-x = x + v × Δt
-$$
-🎲 Procedural Spawning Probability
-$$
-P(i) = wi / Σw
-$$
 🏗️ Architecture (MVC)
-$$
+```bash
 Model: Game data (score, fuel, enemies, level)
 View: Turtle rendering system (UI, graphics)
 Controller: Input handling + game loop logic
-$$
+```
 
 👨‍💻 Author Details
-
+```bash
 Name: Abdullah Al Mamun Zishan
 Role: CSE Student & Developer
 University: Feni University
-
+```
 🌐 Links
+```bash
 GitHub: https://github.com/Zishan-125
 LinkedIn: www.linkedin.com/in/abdullah-al-mamun-zishan-606550282
+```
 🚀 Project Goal
-
+```bash
 To demonstrate real-time game engine concepts using Python with:
 
 State management
 Collision systems
 Procedural generation
 Clean software architecture (MVC)
+```
