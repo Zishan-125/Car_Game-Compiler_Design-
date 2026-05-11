@@ -82,40 +82,8 @@ sequenceDiagram
     end
 ```
 
-## 🚀 Key Technical Features
+### 🎯 Collision Detection
 
-### 🎯 Collision Box Logic (Hitbox Detection)
-The game uses a **custom coordinate-based collision system** instead of complex physics engines.  
-Each object (car, enemies, fuel) is treated as a bounding area, and collisions are detected using distance calculation:
-
-
-::contentReference[oaicite:0]{index=0}
-
-
-If the calculated distance is below a defined threshold, a collision event is triggered (enemy crash or fuel collection).
-
----
-
-### ⚡ Frame-Independent Game Logic (Delta-Based Thinking)
-The game is designed to remain smooth across different hardware performances.
-
-Instead of relying on fixed movement speed alone, all updates are handled in a consistent loop interval (~60 FPS), ensuring:
-- Smooth car movement
-- Stable enemy motion
-- Consistent gameplay speed across devices
-
-This makes the experience **hardware-independent and responsive**.
-
----
-
-### 🎲 Procedural Spawning System
-Enemies and fuel items are generated using a **weighted randomness algorithm**:
-
-- Ensures no unfair clustering of obstacles
-- Maintains at least one safe lane possibility
-- Balances difficulty dynamically based on score level
-- Prevents “impossible scenarios” during gameplay
-
-This creates a **fair but unpredictable arcade experience**.
-
----
+$$
+d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+$$
