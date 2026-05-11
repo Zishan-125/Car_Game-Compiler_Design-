@@ -68,9 +68,10 @@ sequenceDiagram
 participant Controller
 participant Model
 participant View
-
+```
 ⚙️ Internal Update Cycle (Animation Logic)
 
+```mermaid
 Controller->>Model: Update Input (Move Car)
 Controller->>Model: Update Game Logic
 Model->>Model: Move Enemies & Road
@@ -78,3 +79,4 @@ Model->>Model: Check Fuel Drain
 Model->>Model: Check Difficulty Level
 Controller->>View: Render Frame
 View->>Screen: Draw Car, Road, HUD
+```
