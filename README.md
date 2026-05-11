@@ -1,8 +1,8 @@
 # 🏎️ TURBO RACER: FUEL RECOVERY  
 > *High-Performance Arcade Logic meets MVC Architecture.*
 
- <p align="center">
-  <img src="https://media.giphy.com/media/3o7aD8yI3nrBHKs6By/giphy.gif" width="420"/>
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXF6Mmt4bm93bmZ6Z3R6bmZ6Z3R6bmZ6Z3R6bmZ6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/H3OfX3YhG3HJW/giphy.gif" width="480"/>
 </p>
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXF6Mmt4bm93bmZ6Z3R6bmZ6Z3R6bmZ6Z3R6bmZ6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/H3OfX3YhG3HJW/giphy.gif" width="500"/>
 </p>
