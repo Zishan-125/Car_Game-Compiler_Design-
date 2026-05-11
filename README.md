@@ -84,6 +84,12 @@ sequenceDiagram
 
 ### 🎯 Collision Detection
 
+Collision Box Logic: Custom-built hitbox detection using coordinate geometry:
+
 $$
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 $$
+
+Delta-Time Logic: Ensures the game remains playable on different CPU speeds.
+
+Procedural Spawning: Enemies and fuel items are generated using weighted randomness to prevent "impossible" lanes.
