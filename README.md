@@ -46,28 +46,22 @@ Handles:
 
 ```mermaid
 flowchart TD
-A[Start Game] --> B[MENU STATE]
-B -->|SPACE| C[PLAYING STATE]
-
-C --> D[Update Logic]
-D --> E[Move Road + Car]
-D --> F[Spawn Enemies]
-D --> G[Spawn Fuel]
-
-E --> H{Collision Check}
-F --> H
-G --> H
-
-H -->|Enemy Hit| X[GAME OVER]
-H -->|Fuel Collected| C
-H -->|No Collision| C
-
-X --> B
-
-sequenceDiagram
-participant Controller
-participant Model
-participant View
+    A[Start Game] --> B{Game State}
+    B -->|MENU| C[Wait for SPACE Key]
+    C -->|SPACE Pressed| D[Set State: PLAYING]
+    
+    D --> E[Update Model]
+    E --> F[Move Assets & Drain Fuel]
+    F --> G{Collision?}
+    
+    G -->|Fuel Tank| H[Refill Fuel + Bonus Pts]
+    G -->|Enemy Car| I[Set State: GAME OVER]
+    G -->|None| J[Render Frame]
+    
+    H --> J
+    J --> E
+    I --> K[Display Final Score]
+    K -->|Wait| B
 ```
 ⚙️ Internal Update Cycle (Animation Logic)
 
