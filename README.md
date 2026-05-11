@@ -117,15 +117,24 @@ No external libraries required (only built-in Python modules).
 
 🧠 Key Technical Features
 🎯 Collision Detection
+$$
 d = √((x2 - x1)² + (y2 - y1)²)
+$$
 ⚡ Game Movement Logic
+$$
 x = x + v × Δt
+$$
 🎲 Procedural Spawning Probability
+$$
 P(i) = wi / Σw
+$$
 🏗️ Architecture (MVC)
+$$
 Model: Game data (score, fuel, enemies, level)
 View: Turtle rendering system (UI, graphics)
 Controller: Input handling + game loop logic
+$$
+
 👨‍💻 Author Details
 
 Name: Abdullah Al Mamun Zishan
