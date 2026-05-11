@@ -93,3 +93,53 @@ $$
 Delta-Time Logic: Ensures the game remains playable on different CPU speeds.
 
 Procedural Spawning: Enemies and fuel items are generated using weighted randomness to prevent "impossible" lanes.
+
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Zishan-125/Car_Game-Compiler_Design-.git
+```
+2️⃣ Move into Project Directory
+```bash
+cd Car_Game-Compiler_Design-
+```
+3️⃣ Run the Game
+```bash
+python car_game.py
+```
+⚙️ Requirements
+```bash
+Python 3.x
+```
+No external libraries required (only built-in Python modules).
+
+🧠 Key Technical Features
+🎯 Collision Detection
+d = √((x2 - x1)² + (y2 - y1)²)
+⚡ Game Movement Logic
+x = x + v × Δt
+🎲 Procedural Spawning Probability
+P(i) = wi / Σw
+🏗️ Architecture (MVC)
+Model: Game data (score, fuel, enemies, level)
+View: Turtle rendering system (UI, graphics)
+Controller: Input handling + game loop logic
+👨‍💻 Author Details
+
+Name: Abdullah Al Mamun Zishan
+Role: CSE Student & Developer
+University: Feni University
+
+🌐 Links
+GitHub: https://github.com/Zishan-125
+LinkedIn: www.linkedin.com/in/abdullah-al-mamun-zishan-606550282
+🚀 Project Goal
+
+To demonstrate real-time game engine concepts using Python with:
+
+State management
+Collision systems
+Procedural generation
+Clean software architecture (MVC)
