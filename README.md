@@ -66,11 +66,20 @@ flowchart TD
 ⚙️ Internal Update Cycle (Animation Logic)
 
 ```mermaid
-Controller->>Model: Update Input (Move Car)
-Controller->>Model: Update Game Logic
-Model->>Model: Move Enemies & Road
-Model->>Model: Check Fuel Drain
-Model->>Model: Check Difficulty Level
-Controller->>View: Render Frame
-View->>Screen: Draw Car, Road, HUD
+sequenceDiagram
+    participant C as Controller
+    participant M as Model
+    participant V as View
+
+    loop Every Frame
+        C->>M: Request Logic Update (Input + Physics)
+        M->>M: Calculate New Positions
+        M->>M: Decrease Fuel
+        M->>M: Check Difficulty Scaling
+        C->>M: Query Collision Status
+        C->>V: Send New Coordinates
+        V->>V: Clear & Redraw Screen
+    end
 ```
+
+🚀 Key Technical FeaturesCollision Box Logic: Custom-built hitbox detection using coordinate geometry:$$distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$Delta-Time Logic: Ensures the game remains playable on different CPU speeds.Procedural Spawning: Enemies and fuel items are generated using weighted randomness to prevent "impossible" lanes.
