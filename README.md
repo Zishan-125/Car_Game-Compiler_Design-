@@ -57,15 +57,6 @@ loop();
 # 🎮 GAME FLOW (LIVE SYSTEM VISUALIZATION)
 
 
-flowchart LR
-A[MENU] --> B[START GAME]
-B --> C[PLAYING STATE]
-C --> D[ENEMY SPAWN]
-C --> E[FUEL SPAWN]
-C --> F[COLLISION CHECK]
-F -->|Crash| G[GAME OVER]
-E -->|Collect| C
-D -->|Avoid| C
-G --> A
+
 
 
