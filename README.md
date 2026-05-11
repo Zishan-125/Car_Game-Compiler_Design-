@@ -1,22 +1,20 @@
-# 🚗 TURBO RACER: FUEL RECOVERY  
-> *A Python-powered arcade racing experience with dynamic fuel survival mechanics.*
+# 🏎️ TURBO RACER: FUEL RECOVERY  
+> *High-Performance Arcade Logic meets MVC Architecture.*
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="420"/>
+  <!-- Replace with a GIF of your gameplay or a cool car-related animation -->
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXF6Mmt4bm93bmZ6Z3R6bmZ6Z3R6bmZ6Z3R6bmZ6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/H3OfX3YhG3HJW/giphy.gif" width="500"/>
 </p>
 
 <p align="center">
-  <strong>Survive → Collect Fuel → Avoid Enemies → Increase Score</strong><br/>
-  A real-time 2D racing game built with Python Turtle Graphics (MVC Architecture).
+  <strong>Simulation → Logic → Optimization</strong><br/>
+  A cognitive racing engine built with Python & Turtle Graphics.
 </p>
 
 <p align="center">
-  <a href="https://github.com/Zishan-125/Car_Game-Compiler_Design-">
-    <img src="https://img.shields.io/badge/🚀 Source%20Code-View%20on%20GitHub-black?style=for-the-badge">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/🎮 Game-TURBO%20RACER-red?style=for-the-badge">
-  </a>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Architecture-MVC-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/UI-Turtle%20Graphics-orange?style=for-the-badge">
 </p>
 
 ---
