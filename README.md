@@ -1,62 +1,80 @@
-# 🚗 TURBO RACER: FUEL RECOVERY (Interactive README)
+# 🚗 TURBO RACER: FUEL RECOVERY  
+### Hackathon + HR Friendly Project Documentation
 
-<!-- ===================== HERO ANIMATION ===================== -->
-<p align="center">
-  <canvas id="carAnim" width="600" height="200"></canvas>
-</p>
-
-<script>
-const canvas = document.getElementById("carAnim");
-const ctx = canvas.getContext("2d");
-
-let x = 0;
-
-function drawRoad() {
-    ctx.fillStyle = "#0F172A";
-    ctx.fillRect(0, 0, 600, 200);
-
-    ctx.strokeStyle = "#334155";
-    ctx.lineWidth = 3;
-
-    for (let i = 0; i < 10; i++) {
-        ctx.beginPath();
-        ctx.moveTo(60 + i * 50, 0);
-        ctx.lineTo(60 + i * 50, 200);
-        ctx.stroke();
-    }
-}
-
-function drawCar() {
-    // body
-    ctx.fillStyle = "#00E5FF";
-    ctx.fillRect(x, 120, 60, 20);
-
-    // roof
-    ctx.fillStyle = "#0284C7";
-    ctx.fillRect(x + 15, 105, 30, 15);
-
-    // wheels
-    ctx.fillStyle = "#000";
-    ctx.fillRect(x + 10, 140, 10, 10);
-    ctx.fillRect(x + 40, 140, 10, 10);
-}
-
-function loop() {
-    drawRoad();
-    drawCar();
-    x += 2;
-    if (x > 600) x = -60;
-    requestAnimationFrame(loop);
-}
-
-loop();
-</script>
+A high-performance 2D car racing game built using **Python Turtle Graphics** following a clean **MVC (Model–View–Controller)** architecture.  
+Designed to demonstrate **game loop design, state management, collision detection, and dynamic difficulty scaling**.
 
 ---
 
-# 🎮 GAME FLOW (LIVE SYSTEM VISUALIZATION)
+## 🎯 Project Objective
+To build an interactive arcade-style racing game that demonstrates:
+- Real-time game loop processing
+- Object-oriented architecture (MVC pattern)
+- Dynamic difficulty scaling system
+- Resource (fuel) management mechanics
+- Collision detection system
 
+---
 
+## 🧠 System Architecture (MVC Pattern)
 
+### 🟦 Model (Game Data & Logic)
+Handles:
+- Game state (MENU, PLAYING, GAME_OVER)
+- Score, level, fuel system
+- Enemy & fuel spawn data
+- Difficulty scaling logic
 
+### 🟩 View (Rendering Layer)
+Handles:
+- Turtle-based graphics rendering
+- Car, enemies, road, UI elements
+- HUD (Score, Level, Fuel Bar)
+- Menu & Game Over screens
 
+### 🟥 Controller (Game Engine)
+Handles:
+- Keyboard input
+- Game loop execution
+- Collision detection
+- Spawn logic (enemies + fuel)
+- Game state transitions
+
+---
+
+## 🔁 Game Loop Flow (Core System)
+
+```mermaid
+flowchart TD
+A[Start Game] --> B[MENU STATE]
+B -->|SPACE| C[PLAYING STATE]
+
+C --> D[Update Logic]
+D --> E[Move Road + Car]
+D --> F[Spawn Enemies]
+D --> G[Spawn Fuel]
+
+E --> H{Collision Check}
+F --> H
+G --> H
+
+H -->|Enemy Hit| X[GAME OVER]
+H -->|Fuel Collected| C
+H -->|No Collision| C
+
+X --> B
+
+sequenceDiagram
+participant Controller
+participant Model
+participant View
+
+⚙️ Internal Update Cycle (Animation Logic)
+
+Controller->>Model: Update Input (Move Car)
+Controller->>Model: Update Game Logic
+Model->>Model: Move Enemies & Road
+Model->>Model: Check Fuel Drain
+Model->>Model: Check Difficulty Level
+Controller->>View: Render Frame
+View->>Screen: Draw Car, Road, HUD
